@@ -4,21 +4,18 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
+import data from "./data";
 
 function App() {
+  const cards = data.map((item) => {
+    return <Card key={item.id} item={item} />;
+  });
+
   return (
     <div className="container">
       <Navbar />
-      {/* <Hero /> */}
-      <Card
-        status="SOLD-OUT"
-        img="katie-zaferes.png"
-        rating="5.0"
-        reviewCount={6}
-        country="USA"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
-      />
+      <Hero />
+      <section className="cards-list">{cards}</section>
     </div>
   );
 }

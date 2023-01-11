@@ -32,14 +32,12 @@ body {
 }
 
 .hero--container {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
-  margin-block: 26px;
+  width: 550px;
 }
 
 .hero--image {
+  display: block;
+  margin: 26px auto;
   height: 232px;
 }
 
@@ -47,7 +45,8 @@ body {
   display: flex;
   flex-direction: column;
   text-align: left;
-  /* justify-content: flex-start; */
+  margin-block: 32px;
+  margin-inline: 36px;
 }
 
 .hero--text > h1 {
@@ -58,5 +57,7 @@ body {
 .hero--text > h3 {
   font-size: 16px;
   font-weight: 300;
+  line-height: 110%;
   max-width: 320px;
+  margin-block: 8px;
 }

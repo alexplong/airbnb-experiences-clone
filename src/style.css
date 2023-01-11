@@ -9,6 +9,13 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 body {
   margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
 }
 
 .nav {
@@ -22,4 +29,34 @@ body {
 
 .nav--logo {
   max-width: 100px;
+}
+
+.hero--container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  margin-block: 26px;
+}
+
+.hero--image {
+  height: 232px;
+}
+
+.hero--text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* justify-content: flex-start; */
+}
+
+.hero--text > h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.hero--text > h3 {
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 320px;
 }
